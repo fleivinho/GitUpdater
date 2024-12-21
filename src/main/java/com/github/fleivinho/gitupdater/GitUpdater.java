@@ -86,7 +86,7 @@ public abstract class GitUpdater {
     }
 
     public boolean downloadLastVersion() {
-        return WebAccessAPI.downloadFile(getDownloadUrl(), getUpdateFolder());
+        return WebAccessAPI.downloadFile(getDownloadUrl(), new File(getUpdateFolder(), pluginName + ".jar"));
     }
 
     public abstract File getUpdateFolder();
