@@ -1,0 +1,4 @@
+name: GitUpdater
+version: '1.0.0'
+main: com.github.fleivinho.gitupdater.GitUpdater
+api-version: '1.18'
